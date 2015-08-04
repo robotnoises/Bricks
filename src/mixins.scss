@@ -1,0 +1,3 @@
+@mixin brick-width($num-children) {
+  width: percentage(100 / $num-children - 1);
+}

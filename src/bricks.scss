@@ -1,0 +1,35 @@
+@import 'vars';
+@import 'mixins';
+
+// Container
+
+.wall {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  
+  -webkit-transition: width $transition-fast;
+  -moz-transition: width $transition-fast;
+  transition: width $transition-fast;
+  
+  -webkit-box-sizing: border-box !important; 
+  -moz-box-sizing: border-box !important; 
+  box-sizing: border-box !important; 
+}
+
+.wall > .brick {
+  display: inline-block;
+  position: relative;
+  *display: inline; /* IE 6 */
+  zoom: 1;
+  vertical-align: top;
+}
+
+// Bricks (Grid)
+
+.brick {
+  border: 1px solid #eee;
+  padding: 5px;
+}
+
+@import 'queries';
