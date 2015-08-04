@@ -1,0 +1,11 @@
+#distribution
+
+dist/
+
+# combined scss files
+
+src/compiled
+
+# Mac stuff
+
+.DS_Store
