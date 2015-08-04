@@ -1,11 +1,14 @@
 #distribution
-
 dist/
 
 # combined scss files
+src/compiled/
 
-src/compiled
+# sass
+.sass-cache/
+
+# npm
+node_modules/
 
 # Mac stuff
-
 .DS_Store
