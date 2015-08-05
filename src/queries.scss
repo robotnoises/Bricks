@@ -17,22 +17,20 @@
 
 /* ----------- Retina Displays ----------- */
 
-@media
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (min-resolution: 192dpi)
-  and (min-width: 0px)
-  and (max-width: 800px) {
+// @media  
+//   (-webkit-min-device-pixel-ratio: 2)
+//   and (min-resolution: 192dpi)
+//   and (min-width: 0px)
+//   and (max-width: 600px) {
   
-  .wall {
-    width: 100% !important;
-    .brick {
-      @include cancel-float();
-    }
-  }
+//   .wall {
+//     width: 100% !important;
+//     .brick {
+//       @include cancel-float();
+//     }
+//   }
   
-}
+// }
 
 /* ----------- iPhone 4 and 4S ----------- */
 
