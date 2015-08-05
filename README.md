@@ -17,23 +17,31 @@ A tiny (< 5kb), responsive grid.
 
 4. A brick will take up a proportinal amount of space in a row based on the fractional width you give it, e.g.
 
-```html
 <!-- Three column layout --->
 <div class="wall">
   <div class="brick col-1-3"></div>
   <div class="brick col-1-3"></div>
   <div class="brick col-1-3"></div>
 </div>
-```
 
 ## Available proportions
 > 1/2 `brick col-1-2`
+
 > 1/3 `brick col-1-3`
+
 > 1/4 `brick col-1-4`
+
 > 1/5 `brick col-1-5`
+
 > 1/6 `brick col-1-6`
+
 > 2/3 `brick col-2-3`
+
 > 3/4 `brick col-3-4`
+
 > 2/5 `brick col-2-5`
+
 > 3/5 `brick col-3-5`
+
 > 4/5 `brick col-4-5`
+
