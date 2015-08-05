@@ -8,9 +8,9 @@ A tiny (< 5kb), responsive grid.
 
 3. Navigate to the project root and install the dependencies `npm install`
 
-4. Compile the SASS into css `grunt build`
+4. Compile the SASS into CSS `grunt build`
 
-5. The minified css will be here: `./dist/bricks.min.css`
+5. The minified CSS will be here: `./dist/bricks.min.css`
 
 ## How to use bricks
 1. A `brick` represents a side-by-side container. What you put inside a brick is up to you.
@@ -21,12 +21,14 @@ A tiny (< 5kb), responsive grid.
 
 4. A brick will take up a proportinal amount of space in a row based on the fractional width you give it, e.g.
 
-    <!-- Three column layout --->
-    <div class="wall">
-      <div class="brick col-1-3"></div>
-      <div class="brick col-1-3"></div>
-      <div class="brick col-1-3"></div>
-    </div>
+```html
+<!-- Three column layout --->
+<div class="wall">
+  <div class="brick col-1-3"></div>
+  <div class="brick col-1-3"></div>
+  <div class="brick col-1-3"></div>
+</div>
+```
 
 ## Available proportions
 1/2 `brick col-1-2`
