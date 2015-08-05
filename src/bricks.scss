@@ -12,24 +12,51 @@
   -moz-transition: width $transition-fast;
   transition: width $transition-fast;
   
-  -webkit-box-sizing: border-box !important; 
-  -moz-box-sizing: border-box !important; 
-  box-sizing: border-box !important; 
-}
-
-.wall > .brick {
-  display: inline-block;
-  position: relative;
-  *display: inline; /* IE 6 */
-  zoom: 1;
-  vertical-align: top;
+  @include border-box();
 }
 
 // Bricks (Grid)
 
-.brick {
-  border: 1px solid #eee;
-  padding: 5px;
+.wall {
+  .brick {
+    position: relative;
+    float: left;
+    zoom: 1;
+
+    @include border-box();
+  }
+}
+
+.wall {
+  .brick.col-2 {
+    width: 50%;
+  }
+}
+
+.wall {
+  .brick.col-3 {
+    width: 33.33%;          // For older browsers
+    width: calc(100% / 3);  // Modern
+  }
+}
+
+.wall {
+  .brick.col-4 {
+    width: 25%;
+  }
+}
+
+.wall {
+  .brick.col-5 {
+    width: 20%;
+  }
+}
+
+.wall {
+  .brick.col-6 {
+    width: 16.66%;          // For older browsers
+    width: calc(100% / 6);  // Modern
+  }
 }
 
 @import 'queries';

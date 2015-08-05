@@ -1,52 +1,220 @@
-// /* Media Queries for the brick container */
+@import 'mixins';
 
-// @import 'vars'; 
+/* ----------- Standard (non-retina) Displays ----------- */
 
-// $six-wide: ($brick-dimensions * 6) + ($brick-margins * 12);
-// $five-wide: ($brick-dimensions * 5) + ($brick-margins * 10);
-// $four-wide: ($brick-dimensions * 4) + ($brick-margins * 8);
-// $three-wide: ($brick-dimensions * 3) + ($brick-margins * 6);
-// $two-wide: ($brick-dimensions * 2) + ($brick-margins * 4);
-// $one-wide: ($brick-dimensions * 1) + ($brick-margins * 2);
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (min-width: 0px) 
+  and (max-width: 400px) {
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
 
-// @media screen and (min-width: $one-wide) and (max-width: $two-wide - 1) {
-//   .brick-container, 
-//   .sub-menu {
-//     width: $one-wide;
-//   }
-// }
+/* ----------- Retina Displays ----------- */
 
-// @media screen and (min-width: $two-wide) and (max-width: $three-wide - 1) {
-//   .brick-container, 
-//   .sub-menu {
-//     width: $two-wide;
-//   }
-// }
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) 
+  and (min-width: 0px)
+  and (max-width: 800px) {
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
 
-// @media screen and (min-width: $three-wide) and (max-width: $four-wide - 1) {
-//   .brick-container, 
-//   .sub-menu {
-//     width: $three-wide;
-//   }
-// }
+/* ----------- iPhone 4 and 4S ----------- */
 
-// @media screen and (min-width: $four-wide) and (max-width: $five-wide - 1) {
-//   .brick-container, 
-//   .sub-menu {
-//     width: $four-wide;
-//   }
-// }
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
 
-// @media screen and (min-width: $five-wide) and (max-width: $six-wide - 1) {
-//   .brick-container, 
-//   .sub-menu {
-//     width: $five-wide;
-//   }
-// }
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
 
-// @media screen and (min-width: $six-wide) {
-//   .brick-container, 
-//   .sub-menu {
-//     width: $six-wide;
-//   }
-// }
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+  
+  .wall {
+    .brick {
+      @include cancel-float();
+    }
+  }
+  
+}

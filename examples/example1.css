@@ -1,0 +1,45 @@
+html,
+body {
+  font-family: 'Arial', sans-serf;
+  font-size: 32px;
+}
+
+.wall {
+  background: rgba(0,0,0,0.3);  
+}
+
+.brick {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
+
+.red {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.yellow {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.blue {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.green {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.purple {
+  background-color: #9b59b6;
+  color: #fff;
+}
+
+.grey {
+  background-color: #ecf0f1;
+  color: #000;
+}

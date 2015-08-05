@@ -1,3 +1,11 @@
-@mixin brick-width($num-children) {
-  width: percentage(100 / $num-children - 1);
+@mixin border-box() {    
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
 }
+
+@mixin cancel-float() {
+  float: none !important;
+  width: 100% !important;
+}
+
