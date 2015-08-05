@@ -1,3 +1,9 @@
+@mixin transition($prop, $speed) {
+  -webkit-transition: $prop $speed;
+  -moz-transition: $prop $speed;
+  transition: $prop $speed;
+}
+
 @mixin border-box() {    
   -webkit-box-sizing: border-box; 
   -moz-box-sizing: border-box; 
