@@ -6,23 +6,27 @@ A tiny (< 5kb), responsive grid.
 
 2. Clone this repository `git clone https://github.com/robotnoises/Bricks.git`
 
-3. Navigate to the project root and install the dependencies `npm install` 
+3. Navigate to the project root and install the dependencies `npm install`
+
+4. Compile the SASS into css `grunt build`
+
+5. The minified css will be here: `./dist/bricks.min.css`
 
 ## How to use bricks
 1. A `brick` represents a side-by-side container. What you put inside a brick is up to you.
 
-2. A `wall` contains bricks. You can put as many bricks is you want in a wall.
+2. A `wall` contains bricks. You can put as many bricks is you want in a wall. By default, a wall is just a block-level container and will take up 100% of its container. You can make a wall a wide or narrow as you like.
 
 3. You can put a max of `6` bricks in a row before they start breaking to the next line.
 
 4. A brick will take up a proportinal amount of space in a row based on the fractional width you give it, e.g.
 
     <!-- Three column layout --->
-      <div class="wall">
-        <div class="brick col-1-3"></div>
-        <div class="brick col-1-3"></div>
-        <div class="brick col-1-3"></div>
-      </div>
+    <div class="wall">
+      <div class="brick col-1-3"></div>
+      <div class="brick col-1-3"></div>
+      <div class="brick col-1-3"></div>
+    </div>
 
 ## Available proportions
 1/2 `brick col-1-2`
