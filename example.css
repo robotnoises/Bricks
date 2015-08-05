@@ -15,7 +15,6 @@ h2 {
 .wall {
   margin-top: 20px;
   width: 80%;
-  max-width: 1000px;
 }
 
 .brick {
@@ -66,5 +65,6 @@ h2 {
 }
 
 .content {
-  background: #fafafa;
+  border-left: 5px solid #eee;
+  padding-left: 5px;
 }
