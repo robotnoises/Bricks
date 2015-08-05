@@ -3,11 +3,9 @@
 /* ----------- Standard (non-retina) Displays ----------- */
 
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1)
   and (min-width: 0px) 
-  and (max-width: 400px) {
+  and (max-width: 800px) {
 
   .wall {
     width: 100% !important;
@@ -21,10 +19,10 @@
 /* ----------- Retina Displays ----------- */
 
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) 
+  and (min-resolution: 192dpi)
   and (min-width: 0px)
   and (max-width: 800px) {
   
