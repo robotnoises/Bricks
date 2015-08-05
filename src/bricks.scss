@@ -19,7 +19,8 @@
     display: block;
     position: relative;
     float: left;
-
+    text-align: left;
+    
     @include border-box();
   }
 }
@@ -66,20 +67,17 @@
   }
 }
 
-
 .wall {
   .brick.col-2-5 {
     width: 40%;
   }
 }
 
-
 .wall {
   .brick.col-3-5 {
     width: 60%;
   }
 }
-
 
 .wall {
   .brick.col-4-5 {
