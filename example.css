@@ -68,3 +68,7 @@ h2 {
   border-left: 5px solid #eee;
   padding-left: 5px;
 }
+
+.fixed-example {
+  width: 300px;
+}
