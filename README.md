@@ -15,7 +15,7 @@ A tiny (< 5kb), responsive grid.
 ## How to use bricks
 1. A `brick` represents a side-by-side container. What you put inside a brick is up to you.
 
-2. A `wall` contains bricks. You can put as many bricks in a walkl as you lie. By default, a wall is just a block-level container and will take up 100% of its container. You can make a wall a wide or narrow as you like.
+2. A `wall` contains bricks. You can put as many bricks in a walkl as you lie. By default, a wall is just a block-level container and will take up 100% of its container. You can make a wall as wide or narrow as you like.
 
 3. You can control the amount of proportional row space a brick occupies by giving it a special `col-*` class like this: `<div class="brick col-1-3"></div>`, which will take up one-third of the space.
 
@@ -67,6 +67,9 @@ A tiny (< 5kb), responsive grid.
 
 4/5 `brick col-4-5`
 
-# Examples
+# Browser support
+* All the good ones
+* IE9+
 
+# Examples
 [http://robotnoises.github.io/Bricks/](http://robotnoises.github.io/Bricks/)
