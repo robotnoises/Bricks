@@ -32,14 +32,8 @@
 }
 
 .wall > {
-  *:not(.brick):first-of-type {
+  *:not(.brick):nth-child(1) {
     display: table-caption;
-  }
-}
-
-.wall {
-  .brick:first-of-type {
-    clear: left;
   }
 }
 
@@ -120,6 +114,12 @@
   .brick.col-5-6 {
     width: 83.33%;      // For older browsers
     width: calc(5 / 6); // Modern
+  }
+}
+
+.wall {
+  .brick.col-full {
+    @include cancel-float();
   }
 }
 

@@ -1,10 +1,12 @@
 html,
 body {
-  font-family: 'Arial', sans-serf;
+  font-family: 'Sanchez', serif;
   font-size: 16px;
+  color: #333;
 }
 
 h1 {
+  text-align: center;
   font-size: 32px;
 }
 
@@ -12,20 +14,33 @@ h2 {
   font-size: 22px;
 }
 
+pre,
+xmp {
+  padding: 16px 0;
+  color: #666;
+  background: #eee;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .wall {
   margin-top: 20px;
   width: 80%;
 }
 
-.brick {
-  min-height: 200px;
-  line-height: 200px;
+xmp {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .brick span {
   display: block;
   font-size: 32px;
   text-align: center;
+  line-height: 200px;
+  min-height: 200px;
 }
 
 .red {
