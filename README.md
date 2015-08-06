@@ -37,7 +37,7 @@ A tiny (< 5kb), responsive grid.
 
 ```html
 <div class="wall">
-  <div class="brick fixed"> <!-- fixed { width: 300px } -->
+  <div class="brick fixed"> <!-- .fixed { width: 300px } -->
     <!-- Content here -->
   </div>
   <div class="brick">
