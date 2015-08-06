@@ -4,7 +4,7 @@
 // Container
 
 .wall {
-  display: block;
+  display: table;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -12,16 +12,40 @@
   @include border-box();
 }
 
+.wall:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+
 // Bricks (Grid)
 
 .wall {
   .brick {
-    display: block;
+    display: table-cell;
     position: relative;
-    float: left;
+    overflow: hidden;
     text-align: left;
     
     @include border-box();
+  }
+}
+
+.wall > {
+  *:not(.brick):first-of-type {
+    display: table-caption;
+  }
+}
+
+.wall {
+  .brick:first-of-type {
+    clear: left;
+  }
+}
+
+.wall {
+  .brick[class*="col"] {
+    float: left;
   }
 }
 

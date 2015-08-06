@@ -7,9 +7,15 @@
   and (max-width: 800px) {
 
   .wall {
-    width: 100% !important;
+    @include cancel-float();
     .brick {
       @include cancel-float();
+    }
+  }
+  
+  .wall > {
+    *:not(.brick):first-of-type {
+      display: block;
     }
   }
   
