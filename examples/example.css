@@ -33,6 +33,8 @@ xmp {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
+  overflow-x: scroll;
 }
 
 .brick span {
@@ -86,4 +88,14 @@ xmp {
 
 .fixed-example {
   width: 300px;
+}
+
+@media screen 
+  and (min-width: 0px) 
+  and (max-width: 800px) {
+
+  xmp {
+    width: 100%;
+  }
+  
 }
