@@ -15,18 +15,34 @@ A tiny (< 5kb), responsive grid.
 ## How to use bricks
 1. A `brick` represents a side-by-side container. What you put inside a brick is up to you.
 
-2. A `wall` contains bricks. You can put as many bricks is you want in a wall. By default, a wall is just a block-level container and will take up 100% of its container. You can make a wall a wide or narrow as you like.
+2. A `wall` contains bricks. You can put as many bricks in a walkl as you lie. By default, a wall is just a block-level container and will take up 100% of its container. You can make a wall a wide or narrow as you like.
 
-3. You can put a max of `6` bricks in a row before they start breaking to the next line.
+3. You can control the amount of proportional row space a brick occupies by giving it a special `col-*` class like this: `<div class="brick col-1-3"></div>`, which will take up one-third of the space.
 
-4. A brick will take up a proportinal amount of space in a row based on the fractional width you give it, e.g.
+3. You can put a max of `6` bricks in a row before they start breaking to the next line, E.g.
 
 ```html
-<!-- Three column layout --->
 <div class="wall">
-  <div class="brick col-1-3"></div>
-  <div class="brick col-1-3"></div>
-  <div class="brick col-1-3"></div>
+  <div class="brick col-1-6"></div>
+  <div class="brick col-1-6"></div>
+  <div class="brick col-1-6"></div>
+  <div class="brick col-1-6"></div>
+  <div class="brick col-1-6"></div>
+  <div class="brick col-1-6"></div>
+</div>
+```
+5. If you want *more* than 6 bricks in a row, just leave-off the `col-*` class. These bricks will display as if they were cells in a table row, which you can add an unlimited amount of.
+
+6. If you want a brick to have a fixed width, you may add that style in a separate class of your choosing. If you want the bricks around it to take up the remaining side-to-side space, leave-off the `col-*` class. E.g.
+
+```html
+<div class="wall">
+  <div class="brick fixed"> <!-- fixed { width: 300px } -->
+    <!-- Content here -->
+  </div>
+  <div class="brick">
+    <!-- Will occupy the remaining space to the right... -->
+  </div>
 </div>
 ```
 
