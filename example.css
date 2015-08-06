@@ -21,6 +21,7 @@ xmp {
   background: #eee;
   margin-top: 1em;
   margin-bottom: 1em;
+  overflow-x: scroll;
 }
 
 .wall {
@@ -34,7 +35,6 @@ xmp {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  overflow-x: scroll;
 }
 
 .brick span {
@@ -96,6 +96,12 @@ xmp {
 
   xmp {
     width: 100%;
+  }
+  
+  .brick span {
+    margin-top: 68px;
+    min-height: 100px;
+    line-height: 1.25em;
   }
   
 }
