@@ -172,7 +172,7 @@
       <hr />
       
       <h2>Realistic example w/columns</h2>
-      
+
       <div class="brick p-2-3">
         <div class="inner">
           <div class="content">
@@ -276,8 +276,37 @@
 
     </div>
     </xmp>
-    
-    </div>
+        
+    <script>
+      window.onload = function () {
+        // Create code block element
+        var makeCodeBlock = function (block) {
+          // Get the container element
+          var parent = block.parentElement;
+          // Create a new element to contain the code example
+          var example = document.createElement('pre');
+          // Remove the placeholder from the example
+          var clonedParent = parent.cloneNode(true);
+          clonedParent.removeChild(clonedParent.getElementsByClassName('code-block')[0]);
+          // Add the html example to the new code block
+          example.innerText = '    ' + clonedParent.outerHTML;
+          // Clean-up extra <br> left by removed placeholder
+          var brs = example.getElementsByTagName('br');
+          example.removeChild(brs[brs.length - 2]);
+          
+          block.appendChild(example);
+        };
+        
+        // Gather code block containers
+        var codeBlocks = document.getElementsByClassName('code-block');
+        
+        // Create code blocks
+        for (var i = 0, max = codeBlocks.length; i < max; i++) {
+          makeCodeBlock(codeBlocks[i]);
+        }
+      };
+      
+    </script>
     
     <script>
       window.onload = function () {
