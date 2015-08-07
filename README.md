@@ -1,8 +1,17 @@
 # Bricks
-A tiny (< 5kb), responsive grid.
+A tiny (~2kb), responsive grid.
 
-## Getting started
-1. Install [https://nodejs.org/download/](node), which bundles the Node Package Manager (npm)
+## Get Bricks
+
+### From npm
+1. Install [node](https://nodejs.org/download/), which bundles the Node Package Manager (npm)
+
+2. Navigate to the project root and install the package `npm install bricks-css`
+
+3. You'll find the file to include here: `./node_modules/bricks-css/dist/bricks.min.css`
+
+### From Sourcce 
+1. Install [node](https://nodejs.org/download/), which bundles the Node Package Manager (npm)
 
 2. Clone this repository `git clone https://github.com/robotnoises/Bricks.git`
 
