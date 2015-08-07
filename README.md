@@ -21,7 +21,7 @@ A tiny (~2kb), responsive grid.
 
 5. The minified CSS will be here: `./dist/bricks.min.css`
 
-## How to use bricks
+## How to use Bricks
 1. A `brick` represents a side-by-side container. What you put inside a brick is up to you.
 
 2. A `wall` contains bricks. You can put as many bricks in a wall as you like. By default, a wall is just a block-level container and will take up 100% of its own container. You can make a wall as wide or narrow as you like.
