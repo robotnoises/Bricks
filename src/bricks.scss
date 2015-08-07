@@ -1,3 +1,7 @@
+// Bricks version 0.0.1
+// Created by David Nichols
+// davenich@gmail.com
+
 @import 'vars';
 @import 'mixins';
 
@@ -34,12 +38,6 @@
 .wall > {
   *:not(.brick):first-of-type {
     display: table-caption;
-  }
-}
-
-.wall {
-  .brick:first-of-type {
-    clear: left;
   }
 }
 
