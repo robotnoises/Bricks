@@ -1,14 +1,19 @@
+// Add a transition
+
 @mixin transition($prop, $speed) {
   -webkit-transition: $prop $speed;
   -moz-transition: $prop $speed;
   transition: $prop $speed;
 }
 
+// Add box sizing
+
 @mixin border-box() {    
   -webkit-box-sizing: border-box; 
   -moz-box-sizing: border-box; 
   box-sizing: border-box; 
 }
+
 
 @mixin cancel-float() {
   display: block !important;
