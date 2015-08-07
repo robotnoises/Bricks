@@ -1,6 +1,3 @@
-#distribution
-dist/
-
 # combined scss files
 src/compiled/
 
