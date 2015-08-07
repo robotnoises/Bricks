@@ -12,3 +12,6 @@ node_modules/
 
 # IDE
 .settings/
+
+#npm
+npm-debug.log
