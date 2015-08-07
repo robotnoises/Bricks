@@ -1,5 +1,5 @@
 {
-  "name": "bricks",
+  "name": "bricks-css",
   "version": "0.0.1",
   "description": "A tiny, responsive grid.",
   "main": "Gruntfile.js",
