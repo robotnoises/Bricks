@@ -3,6 +3,8 @@ A tiny (~2kb), responsive grid.
 
 ## Get Bricks
 
+*Bricks is still beta. Use with caution*
+
 ### From npm
 1. Install [node](https://nodejs.org/download/), which bundles the Node Package Manager (npm)
 
@@ -24,7 +26,7 @@ A tiny (~2kb), responsive grid.
 ## How to use Bricks
 1. A `brick` represents a side-by-side container. What you put inside a brick is up to you.
 
-2. A `wall` contains bricks. You can put as many bricks in a wall as you like. By default, a wall is just a block-level container and will take up 100% of its own container. You can make a wall as wide or narrow as you like.
+2. A `wall` contains bricks. You can put as many bricks in a wall as you like. By default, a wall will take up 100% of its own container. You can make a wall as wide or narrow as you like.
 
 3. You can control the amount of proportional row space a brick occupies by giving it a special `p-*` class like this: `<div class="brick p-1-3"></div>`, which will take up one-third of the space.
 
