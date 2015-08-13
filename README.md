@@ -83,4 +83,4 @@ A tiny (~2kb), responsive grid.
 * IE9+
 
 # Examples
-[http://robotnoises.github.io/Bricks/](http://robotnoises.github.io/Bricks/)
+[https://robotnoises.github.io/Bricks/](https://robotnoises.github.io/Bricks/)
