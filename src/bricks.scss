@@ -9,11 +9,10 @@
 
 .wall {
   display: table;
-  position: relative;
   margin: 0 auto;
   overflow: hidden;
   width: 100%;
-  
+
   @include border-box();
 }
 
@@ -28,7 +27,6 @@
 .wall {
   .brick {
     display: table-cell;
-    position: relative;
     overflow: hidden;
     text-align: left;
 
