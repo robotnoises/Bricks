@@ -8,16 +8,16 @@
 
 // Add box sizing
 
-@mixin border-box() {    
-  -webkit-box-sizing: border-box; 
-  -moz-box-sizing: border-box; 
-  box-sizing: border-box; 
+@mixin border-box() {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
 @mixin cancel-float() {
+  position: relative;
   display: block !important;
   float: none !important;
   width: 100% !important;
 }
-
