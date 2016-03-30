@@ -1,0 +1,26 @@
+{
+  "name": "bricks-css",
+  "description": "A tiny, responsive grid.",
+  "main": "Gruntfile.js",
+  "authors": [
+    "David Nichols"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bricks",
+    "grid",
+    "responsive",
+    "css"
+  ],
+  "homepage": "https://github.com/robotnoises/Bricks",
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
